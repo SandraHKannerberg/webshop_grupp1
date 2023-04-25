@@ -24,10 +24,10 @@ define( 'WP_CACHE', true );
 define( 'DB_NAME', 'webshop_grupp1' );
 
 /** Databasens användarnamn */
-define( 'DB_USER', 'sandra' );
+define( 'DB_USER', 'admin-webshop' );
 
 /** Databasens lösenord */
-define( 'DB_PASSWORD', 'wordpress23' );
+define( 'DB_PASSWORD', '12345' );
 
 /** Databasserver */
 define( 'DB_HOST', 'localhost' );
