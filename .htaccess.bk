@@ -1,0 +1,16 @@
+
+# BEGIN WordPress
+# Direktiven (raderna) mellan ”BEGIN WordPress” och ”END WordPress” är
+# dynamiskt genererade och bör endast ändras via WordPress-filter.
+# Eventuella ändringar av direktiven mellan dessa markörer kommer att skrivas över.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /webshop_grupp1/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /webshop_grupp1/index.php [L]
+</IfModule>
+
+# END WordPress
