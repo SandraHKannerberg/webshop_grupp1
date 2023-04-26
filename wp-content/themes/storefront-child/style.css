@@ -45,7 +45,7 @@ h2 {
   letter-spacing: 2px;
 }
 
-.col-full {
+footer .col-full {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
