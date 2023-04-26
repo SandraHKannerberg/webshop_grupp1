@@ -54,5 +54,14 @@ function widget_areas()
         'before_widget' => '',
         'after_widget' => ''
     ]);
+
+    //widget för "infobanner"
+    register_sidebar([
+        'name' => 'infobanner',
+        'description' => 'Widget for info banner',
+        'id' => 'infobanner',
+        'before_widget' => '',
+        'after_widget' => ''
+    ]);
 }
 add_action('widgets_init', 'widget_areas');
