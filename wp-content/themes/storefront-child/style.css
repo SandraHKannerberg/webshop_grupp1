@@ -49,3 +49,14 @@ footer .col-full {
   display: flex;
   justify-content: space-between;
 }
+
+a.cart-contents::after {
+  color: white;
+}
+
+.woocommerce-Price-amount {
+  color: white;
+}
+.count {
+  color: white;
+}
