@@ -1,5 +1,5 @@
 <?php
-define('WP_CACHE', true);
+
 /**
  * Baskonfiguration för WordPress.
  *
