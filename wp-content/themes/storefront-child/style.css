@@ -9,8 +9,11 @@ Template: storefront
   font-family: "Poppins", sans-serif;
 }
 
-.storefront-breadcrumb {
-  background-color: yellow;
+#masthead {
+  margin-bottom: 0;
+  background-color: rgb(23, 22, 22);
+  color: white;
+  border-bottom: none;
 }
 
 /* .woocommerce.columns-4.quick-sale {
@@ -20,22 +23,29 @@ Template: storefront
   width: 100%;
 } */
 
-.woocommerce.columns-4.quick-sale ul.products li.product {
-  float: left;
-  margin-right: 10px;
-  /*clear: none;*/
-  width: auto;
-}
-.woocommerce.columns-3 ul.products.columns-3 li.product {
-  float: left;
-  margin-right: 10px;
-  /* clear: none; */
-  width: auto;
+/* .alignnormal {
+  background-color: aquamarine;
+} */
+.home .entry-title {
+  display: none;
 }
 
-.woocommerce.columns-4 ul.products.columns-4 li.product {
-  float: left;
-  margin-right: 10px;
-  /*clear: none;*/
-  width: auto;
+.main-navigation ul li a {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+a:visited {
+  color: inherit;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.col-full {
+  display: flex;
+  justify-content: space-around;
 }
