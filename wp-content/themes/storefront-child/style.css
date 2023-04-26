@@ -2,3 +2,40 @@
 Theme Name: Storefront Childtheme
 Template: storefront
 */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.storefront-breadcrumb {
+  background-color: yellow;
+}
+
+/* .woocommerce.columns-4.quick-sale {
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+} */
+
+.woocommerce.columns-4.quick-sale ul.products li.product {
+  float: left;
+  margin-right: 10px;
+  /*clear: none;*/
+  width: auto;
+}
+.woocommerce.columns-3 ul.products.columns-3 li.product {
+  float: left;
+  margin-right: 10px;
+  /* clear: none; */
+  width: auto;
+}
+
+.woocommerce.columns-4 ul.products.columns-4 li.product {
+  float: left;
+  margin-right: 10px;
+  /*clear: none;*/
+  width: auto;
+}
