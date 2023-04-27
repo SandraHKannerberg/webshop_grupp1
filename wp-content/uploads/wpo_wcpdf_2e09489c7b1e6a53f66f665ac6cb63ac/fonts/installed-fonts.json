@@ -1,0 +1,26 @@
+{
+    "open sans": {
+        "normal": "C:\/MAMP\/htdocs\/webshop_grupp1\/wp-content\/uploads\/wpo_wcpdf_2e09489c7b1e6a53f66f665ac6cb63ac\/fonts\/OpenSans-Normal",
+        "bold": "C:\/MAMP\/htdocs\/webshop_grupp1\/wp-content\/uploads\/wpo_wcpdf_2e09489c7b1e6a53f66f665ac6cb63ac\/fonts\/OpenSans-Bold",
+        "italic": "C:\/MAMP\/htdocs\/webshop_grupp1\/wp-content\/uploads\/wpo_wcpdf_2e09489c7b1e6a53f66f665ac6cb63ac\/fonts\/OpenSans-Italic",
+        "bold_italic": "C:\/MAMP\/htdocs\/webshop_grupp1\/wp-content\/uploads\/wpo_wcpdf_2e09489c7b1e6a53f66f665ac6cb63ac\/fonts\/OpenSans-BoldItalic"
+    },
+    "segoe": {
+        "normal": "C:\/MAMP\/htdocs\/webshop_grupp1\/wp-content\/uploads\/wpo_wcpdf_2e09489c7b1e6a53f66f665ac6cb63ac\/fonts\/Segoe-Normal",
+        "bold": "C:\/MAMP\/htdocs\/webshop_grupp1\/wp-content\/uploads\/wpo_wcpdf_2e09489c7b1e6a53f66f665ac6cb63ac\/fonts\/Segoe-Bold",
+        "italic": "C:\/MAMP\/htdocs\/webshop_grupp1\/wp-content\/uploads\/wpo_wcpdf_2e09489c7b1e6a53f66f665ac6cb63ac\/fonts\/Segoe-Italic",
+        "bold_italic": "C:\/MAMP\/htdocs\/webshop_grupp1\/wp-content\/uploads\/wpo_wcpdf_2e09489c7b1e6a53f66f665ac6cb63ac\/fonts\/Segoe-BoldItalic"
+    },
+    "roboto slab": {
+        "normal": "C:\/MAMP\/htdocs\/webshop_grupp1\/wp-content\/uploads\/wpo_wcpdf_2e09489c7b1e6a53f66f665ac6cb63ac\/fonts\/RobotoSlab-Normal",
+        "bold": "C:\/MAMP\/htdocs\/webshop_grupp1\/wp-content\/uploads\/wpo_wcpdf_2e09489c7b1e6a53f66f665ac6cb63ac\/fonts\/RobotoSlab-Bold",
+        "italic": "C:\/MAMP\/htdocs\/webshop_grupp1\/wp-content\/uploads\/wpo_wcpdf_2e09489c7b1e6a53f66f665ac6cb63ac\/fonts\/RobotoSlab-Italic",
+        "bold_italic": "C:\/MAMP\/htdocs\/webshop_grupp1\/wp-content\/uploads\/wpo_wcpdf_2e09489c7b1e6a53f66f665ac6cb63ac\/fonts\/RobotoSlab-BoldItalic"
+    },
+    "currencies": {
+        "normal": "C:\/MAMP\/htdocs\/webshop_grupp1\/wp-content\/uploads\/wpo_wcpdf_2e09489c7b1e6a53f66f665ac6cb63ac\/fonts\/currencies",
+        "bold": "C:\/MAMP\/htdocs\/webshop_grupp1\/wp-content\/uploads\/wpo_wcpdf_2e09489c7b1e6a53f66f665ac6cb63ac\/fonts\/currencies",
+        "italic": "C:\/MAMP\/htdocs\/webshop_grupp1\/wp-content\/uploads\/wpo_wcpdf_2e09489c7b1e6a53f66f665ac6cb63ac\/fonts\/currencies",
+        "bold_italic": "C:\/MAMP\/htdocs\/webshop_grupp1\/wp-content\/uploads\/wpo_wcpdf_2e09489c7b1e6a53f66f665ac6cb63ac\/fonts\/currencies"
+    }
+}

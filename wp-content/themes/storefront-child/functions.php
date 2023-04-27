@@ -15,7 +15,6 @@ function my_remove_product_result_count()
 }
 add_action('after_setup_theme', 'my_remove_product_result_count', 99);
 
-//Delete the sorting-box at the bottom of the page
 function my_remove_function()
 {
     remove_action('woocommerce_after_shop_loop', 'woocommerce_catalog_ordering', 10);
@@ -65,3 +64,33 @@ function widget_areas()
     ]);
 }
 add_action('widgets_init', 'widget_areas');
+/*----------------------------------------------------------------------------
+OPTIMIZED CHECKOUT
+------------------------------------------------------------------------------*/
+//Delete header
+
+
+//Delete footer
+
+
+//Move the coupon form
+remove_action('woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10);
+add_action('woocommerce_after_checkout_form', 'woocommerce_checkout_coupon_form', 10);
+
+//Add link to cart
+add_action('woocommerce_before_checkout_form', 'cart_url');
+function cart_url()
+{
+    echo '<a href="' . wc_get_cart_url() . '">' . "Ändra varukorgen" . '</a>';
+}
+
+//Add a phonenumber
+add_action('woocommerce_review_order_after_submit', 'add_phonenumber');
+function add_phonenumber()
+{
+    echo "Telefonnummer 073-000 00 00"; //Få detta dynamiskt? Ska man ha en widget?
+}
+
+/*----------------------------------------------------------------------------
+END OF OPTIMIZED CHECKOUT
+------------------------------------------------------------------------------*/
