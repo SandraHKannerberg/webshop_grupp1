@@ -40,6 +40,12 @@ a:visited {
   color: inherit;
 }
 
+h1 {
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  text-align: center !important;
+}
+
 h2 {
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -52,6 +58,34 @@ footer .col-full {
 
 a.cart-contents::after {
   color: white;
+}
+
+ul.meta {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  margin-top: 25px;
+}
+
+.post-container {
+  border: 1px solid #6d6d6d;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px 0px #6d6d6d;
+  padding: 50px;
+  margin: 50px;
+}
+
+.post-section {
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+}
+
+.post-heading:hover {
+  color: #6d6d6d;
+  transition: 0.3 all ease;
 }
 
 /*STYLE FÖR PRIS OCH ANTAL BREDVID KUNDKORGEN MEN DESSA BLIR SAMMA FÄRG I CHECKOUT
