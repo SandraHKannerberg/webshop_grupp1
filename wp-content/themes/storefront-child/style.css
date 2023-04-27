@@ -54,9 +54,10 @@ a.cart-contents::after {
   color: white;
 }
 
+/*STYLE FÖR PRIS OCH ANTAL BREDVID KUNDKORGEN MEN DESSA BLIR SAMMA FÄRG I CHECKOUT
 .woocommerce-Price-amount {
-  color: white;
+  color: blue;
 }
 .count {
-  color: white;
-}
+  color: blue;
+}*/
