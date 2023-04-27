@@ -11,8 +11,9 @@ function registrer_store()
     $store_args = [
 
         'public' => true,
-        'label' => 'Butik',
-        'show_in_rest' => true
+        'label' => 'Butiker',
+        'show_in_rest' => true,
+        'has_archive' => true
 
 
     ];

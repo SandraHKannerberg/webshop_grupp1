@@ -1,0 +1,4 @@
+2023-04-27T13:40:22+00:00 CRITICAL syntax error, unexpected end of file, expecting "," or ";" i C:\MAMP\htdocs\webshop_grupp1\wp-content\themes\storefront-child\single-butik.php på rad 2
+
+2023-04-27T18:36:39+00:00 CRITICAL Cannot redeclare wc_get_cart_url() (previously declared in C:\MAMP\htdocs\webshop_grupp1\wp-content\plugins\woocommerce\includes\wc-core-functions.php:1501) i C:\MAMP\htdocs\webshop_grupp1\wp-content\themes\storefront-child\functions.php på rad 81
+
