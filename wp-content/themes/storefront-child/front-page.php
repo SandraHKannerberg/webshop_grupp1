@@ -18,6 +18,7 @@ get_header(); ?>
     <main id="main" class="site-main" role="main">
 
         <?php
+
         if (have_posts()) :
 
             get_template_part('loop');

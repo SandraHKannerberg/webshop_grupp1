@@ -1,0 +1,155 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "themeisle-blocks/form",
+	"title": "Form",
+	"category": "themeisle-blocks",
+	"description": "Display a form for your clients. Powered by Otter.",
+	"keywords": [ "business", "form", "email" ],
+	"textdomain": "otter-blocks",
+	"attributes": {
+		"id": {
+			"type": "string"
+		},
+		"subject": {
+			"type": "string"
+		},
+		"emailTo": {
+			"type": "string"
+		},
+		"fromName": {
+			"type": "string"
+		},
+		"optionName": {
+			"type": "string"
+		},
+		"hasCaptcha": {
+			"type": "boolean"
+		},
+		"provider": {
+			"type": "string",
+			"default": ""
+		},
+		"listId": {
+			"type": "string"
+		},
+		"action": {
+			"type": "string",
+			"default": "subscribe"
+		},
+		"submitLabel": {
+			"type": "string"
+		},
+		"sendUserEmail": {
+			"type": "boolean"
+		},
+		"redirectLink": {
+			"type": "string"
+		},
+		"inputPadding": {
+			"type": "object"
+		},
+		"inputPaddingTablet": {
+			"type": "object"
+		},
+		"inputPaddingMobile": {
+			"type": "object"
+		},
+		"labelColor": {
+			"type": "string"
+		},
+		"helpLabelColor": {
+			"type": "string"
+		},
+		"inputRequiredColor": {
+			"type": "string"
+		},
+		"inputBorderRadius": {
+			"type": ["number", "object"]
+		},
+		"inputBorderColor": {
+			"type": "string"
+		},
+		"inputBorderWidth": {
+			"type": ["number", "object"]
+		},
+		"submitMessage": {
+			"type": "string"
+		},
+		"inputWidth": {
+			"type": "number"
+		},
+		"submitMessageColor": {
+			"type": "string"
+		},
+		"submitMessageErrorColor": {
+			"type": "string"
+		},
+		"submitBackgroundColor": {
+			"type": "string"
+		},
+		"submitBackgroundColorHover": {
+			"type": "string"
+		},
+		"submitColor": {
+			"type": "string"
+		},
+		"submitColorHover": {
+			"type": "string"
+		},
+		"inputGap": {
+			"type": "number"
+		},
+		"inputColor": {
+			"type": "string"
+		},
+		"inputBackgroundColor": {
+			"type": "string"
+		},
+		"inputsGap": {
+			"type": "number"
+		},
+		"labelFontSize": {
+			"type": "string"
+		},
+		"submitFontSize": {
+			"type": "string"
+		},
+		"messageFontSize": {
+			"type": "string"
+		},
+		"helpFontSize": {
+			"type": "string"
+		},
+		"inputFontSize": {
+			"type": "string"
+		},
+		"submitStyle": {
+			"type": "string"
+		},
+		"submitStyleTablet": {
+			"type": "string"
+		},
+		"submitStyleMobile": {
+			"type": "string"
+		},
+		"isSynced": {
+			"type": "array"
+		},
+		"buttonPadding": {
+			"type": "object"
+		},
+		"buttonPaddingTablet": {
+			"type": "object"
+		},
+		"buttonPaddingMobile": {
+			"type": "object"
+		}
+	},
+	"supports": {
+		"align": [ "wide", "full" ]
+	},
+	"editorStyle": "otter-form-editor",
+	"style": "otter-form-style",
+	"script": "otter-form"
+}

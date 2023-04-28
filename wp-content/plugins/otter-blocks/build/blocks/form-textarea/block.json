@@ -1,0 +1,40 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "themeisle-blocks/form-textarea",
+	"title": "Textarea Field",
+	"category": "themeisle-blocks",
+	"description": "Display a contact form for your clients.",
+	"keywords": [ "textarea", "message", "input" ],
+	"ancestor": [ "themeisle-blocks/form" ],
+	"textdomain": "otter-blocks",
+	"attributes": {
+		"id": {
+			"type": "string"
+		},
+		"label": {
+			"type": "string"
+		},
+		"placeholder": {
+			"type": "string"
+		},
+		"isRequired": {
+			"type": "boolean"
+		},
+		"mappedName": {
+			"type": "string"
+		},
+		"labelColor": {
+			"type": "string"
+		},
+		"inputWidth": {
+			"type": "number"
+		},
+		"helpText": {
+			"type": "string"
+		}
+	},
+	"supports": {
+		"align": [ "wide", "full" ]
+	}
+}

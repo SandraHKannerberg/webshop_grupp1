@@ -1,0 +1,72 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "themeisle-blocks/icon-list",
+	"title": "Icon List",
+	"category": "themeisle-blocks",
+	"description": "Display an icon list in a beautiful layout. Powered by Otter.",
+	"keywords": [ "icon", "list", "items" ],
+	"textdomain": "otter-blocks",
+	"attributes": {
+		"id": {
+			"type": "string"
+		},
+		"defaultLibrary": {
+			"type": "string",
+			"default": "fontawesome"
+		},
+		"defaultPrefix": {
+			"type": "string",
+			"default": "fas"
+		},
+		"defaultIcon": {
+			"type": "string",
+			"default": "check"
+		},
+		"defaultContentColor": {
+			"type": "string"
+		},
+		"defaultIconColor": {
+			"type": "string"
+		},
+		"defaultSize": {
+			"type": ["number", "string"]
+		},
+		"defaultIconSize": {
+			"type": "string"
+		},
+		"gap": {
+			"type": ["number", "string"]
+		},
+		"gapIconLabel": {
+			"type": ["string"]
+		},
+		"horizontalAlign": {
+			"type": "string"
+		},
+		"alignmentTablet": {
+			"type": "string"
+		},
+		"alignmentMobile": {
+			"type": "string"
+		},
+		"hideLabels": {
+			"type": "boolean"
+		},
+		"hasDivider": {
+			"type": "boolean"
+		},
+		"dividerWidth": {
+			"type": "string"
+		},
+		"dividerColor": {
+			"type": "string"
+		},
+		"dividerLength": {
+			"type": "string"
+		}
+	},
+
+	"editorStyle": "otter-icon-list-editor",
+	"style": "otter-icon-list-style"
+}

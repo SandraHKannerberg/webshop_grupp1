@@ -62,12 +62,20 @@ function widget_areas()
         'before_widget' => '',
         'after_widget' => ''
     ]);
+
+    //widget för "checkout"
+    register_sidebar([
+        'name' => 'checkout',
+        'description' => 'Widget for checkout',
+        'id' => 'checkout',
+        'before_widget' => '',
+        'after_widget' => ''
+    ]);
 }
 add_action('widgets_init', 'widget_areas');
-/*----------------------------------------------------------------------------
-OPTIMIZED CHECKOUT
-------------------------------------------------------------------------------*/
-//Delete header
+
+/*-----------------------OPTIMIZED CHECKOUT---------------------------------------*/
+//Delete header in Checkout
 function remove_header_from_checkout()
 {
     if (is_checkout()) {
@@ -86,9 +94,21 @@ function remove_header_from_checkout()
 }
 add_action('wp_head', 'remove_header_from_checkout');
 
+//Delete footer in Checkout
+function delete_footer()
+{
+    if (is_checkout()) {
+        echo "
+    <style type='text/css'>
 
-//Delete footer
-
+        #colophon {
+            display: none;
+        }
+    </style>
+    ";
+    }
+}
+add_action('storefront_before_footer', 'delete_footer');
 
 //Move the coupon form
 remove_action('woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10);
@@ -105,9 +125,6 @@ function cart_url()
 add_action('woocommerce_review_order_after_submit', 'add_phonenumber');
 function add_phonenumber()
 {
-    echo "Telefonnummer 073-000 00 00"; //Få detta dynamiskt? Ska man ha en widget?
+    dynamic_sidebar('checkout');
 }
-
-/*----------------------------------------------------------------------------
-END OF OPTIMIZED CHECKOUT
-------------------------------------------------------------------------------*/
+/*------------------END OF OPTIMIZED CHECKOUT-------------------*/

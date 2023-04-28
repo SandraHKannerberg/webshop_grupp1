@@ -1,0 +1,64 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "themeisle-blocks/button-group",
+	"title": "Button Group",
+	"category": "themeisle-blocks",
+	"description": "Prompt visitors to take action with a button group. Powered by Otter.",
+	"keywords": [ "button", "buttons", "button group" ],
+	"textdomain": "otter-blocks",
+	"attributes": {
+		"id": {
+			"type": "string"
+		},
+		"align": {
+			"type": [ "string", "object" ]
+		},
+		"spacing": {
+			"type": ["number", "string"],
+			"default": "20px"
+		},
+		"paddingTopBottom": {
+			"type": ["number", "string"]
+		},
+		"paddingLeftRight": {
+			"type": ["number", "string"]
+		},
+		"padding": {
+			"type": "object"
+		},
+		"paddingTablet": {
+			"type": "object"
+		},
+		"paddingMobile": {
+			"type": "object"
+		},
+		"collapse": {
+			"type": "string",
+			"default": "collapse-none"
+		},
+		"fontSize": {
+			"type": ["number", "string"]
+		},
+		"fontFamily": {
+			"type": "string"
+		},
+		"fontVariant": {
+			"type": "string"
+		},
+		"textTransform": {
+			"type": "string"
+		},
+		"fontStyle": {
+			"type": "string"
+		},
+		"lineHeight": {
+			"type": ["number", "string"]
+		},
+		"isSynced": {
+			"type": "array"
+		}
+	},
+	"editorStyle": "otter-button-group-editor",
+	"style": "otter-button-group-style"
+}
