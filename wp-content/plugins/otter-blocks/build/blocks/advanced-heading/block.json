@@ -1,0 +1,196 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "themeisle-blocks/advanced-heading",
+	"title": "Advanced Heading",
+	"category": "themeisle-blocks",
+	"description": "Advanced Heading gives a spin to editor's Heading block with much needed customization options. Powered by Otter.",
+	"keywords": [ "heading", "title", "advanced heading" ],
+	"textdomain": "otter-blocks",
+	"attributes": {
+		"id": {
+			"type": "string"
+		},
+		"content": {
+			"type": "string",
+			"source": "html",
+			"selector": "h1,h2,h3,h4,h5,h6,div,p,span",
+			"default": ""
+		},
+		"tag": {
+			"default": "h2",
+			"type": "string"
+		},
+		"align": {
+			"type": "string"
+		},
+		"alignTablet": {
+			"type": "string"
+		},
+		"alignMobile": {
+			"type": "string"
+		},
+		"headingColor": {
+			"type": "string"
+		},
+		"highlightColor": {
+			"type": "string"
+		},
+		"highlightBackground": {
+			"type": "string"
+		},
+		"fontSize": {
+			"type": ["number", "string"]
+		},
+		"fontSizeTablet": {
+			"type": ["number", "string"]
+		},
+		"fontSizeMobile": {
+			"type": ["number", "string"]
+		},
+		"fontFamily": {
+			"type": "string"
+		},
+		"fontVariant": {
+			"type": "string"
+		},
+		"fontStyle": {
+			"type": "string"
+		},
+		"textTransform": {
+			"type": "string"
+		},
+		"lineHeight": {
+			"type": ["number", "string"]
+		},
+		"letterSpacing": {
+			"type": ["number", "string"]
+		},
+		"textShadow": {
+			"type": "boolean",
+			"default": false
+		},
+		"textShadowColor": {
+			"type": "string",
+			"default": "#000000"
+		},
+		"textShadowColorOpacity": {
+			"type": "number",
+			"default": 50
+		},
+		"textShadowBlur": {
+			"type": "number",
+			"default": 5
+		},
+		"textShadowHorizontal": {
+			"type": "number",
+			"default": 0
+		},
+		"textShadowVertical": {
+			"type": "number",
+			"default": 0
+		},
+		"paddingType": {
+			"type": "string"
+		},
+		"paddingTypeTablet": {
+			"type": "string"
+		},
+		"paddingTypeMobile": {
+			"type": "string"
+		},
+		"padding": {
+			"type": ["number", "object"]
+		},
+		"paddingTablet": {
+			"type": ["number", "object"]
+		},
+		"paddingMobile": {
+			"type": ["number", "object"]
+		},
+		"paddingTop": {
+			"type": "number",
+			"default": 0
+		},
+		"paddingTopTablet": {
+			"type": "number"
+		},
+		"paddingTopMobile": {
+			"type": "number"
+		},
+		"paddingRight": {
+			"type": "number"
+		},
+		"paddingRightTablet": {
+			"type": "number"
+		},
+		"paddingRightMobile": {
+			"type": "number"
+		},
+		"paddingBottom": {
+			"type": "number"
+		},
+		"paddingBottomTablet": {
+			"type": "number"
+		},
+		"paddingBottomMobile": {
+			"type": "number"
+		},
+		"paddingLeft": {
+			"type": "number"
+		},
+		"paddingLeftTablet": {
+			"type": "number"
+		},
+		"paddingLeftMobile": {
+			"type": "number"
+		},
+		"marginType": {
+			"type": "string"
+		},
+		"marginTypeTablet": {
+			"type": "string"
+		},
+		"marginTypeMobile": {
+			"type": "string"
+		},
+		"margin": {
+			"type": ["number", "object"]
+		},
+		"marginTablet": {
+			"type": ["number", "object"]
+		},
+		"marginMobile": {
+			"type": ["number", "object"]
+		},
+		"marginTop": {
+			"type": "number"
+		},
+		"marginTopTablet": {
+			"type": "number"
+		},
+		"marginTopMobile": {
+			"type": "number"
+		},
+		"marginBottom": {
+			"type": "number"
+		},
+		"marginBottomTablet": {
+			"type": "number"
+		},
+		"marginBottomMobile": {
+			"type": "number"
+		},
+		"backgroundColor": {
+			"type": "string"
+		},
+		"linkColor": {
+			"type": "string"
+		},
+		"linkHoverColor": {
+			"type": "string"
+		}
+	},
+	"editorStyle": "otter-advanced-heading-editor",
+	"style": "otter-advanced-heading-style"
+}

@@ -1,0 +1,84 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "themeisle-blocks/font-awesome-icons",
+	"title": "Icon",
+	"category": "themeisle-blocks",
+	"description": "Add icons from Font Awesome or ThemeIsle Icons library to your website. Powered by Otter.",
+	"keywords": [ "font awesome", "dashicons", "icons" ],
+	"textdomain": "otter-blocks",
+	"attributes": {
+		"id": {
+			"type": "string"
+		},
+		"align": {
+			"type": ["string", "object"]
+		},
+		"library": {
+			"type": "string",
+			"default": "fontawesome"
+		},
+		"prefix": {
+			"type": "string",
+			"default": "fab"
+		},
+		"icon": {
+			"type": "string",
+			"default": "themeisle"
+		},
+		"link": {
+			"type": "string"
+		},
+		"newTab": {
+			"type": "boolean",
+			"default": false
+		},
+		"fontSize": {
+			"type": ["number", "string"],
+			"default": "16px"
+		},
+		"padding": {
+			"type": [ "number", "object" ]
+		},
+		"margin": {
+			"type": [ "number", "object" ],
+			"default": {
+				"top": "5px",
+				"right": "5px",
+				"bottom": "5px",
+				"left": "5px"
+			}
+		},
+		"backgroundColor": {
+			"type": "string"
+		},
+		"textColor": {
+			"type": "string"
+		},
+		"borderColor": {
+			"type": "string"
+		},
+		"backgroundColorHover": {
+			"type": "string"
+		},
+		"textColorHover": {
+			"type": "string"
+		},
+		"borderColorHover": {
+			"type": "string"
+		},
+		"borderSize": {
+			"type": "number",
+			"default": 0
+		},
+		"borderRadius": {
+			"type": "number",
+			"default": 0
+		},
+		"isSynced": {
+			"type": "array"
+		}
+	},
+	"editorStyle": "otter-font-awesome-editor",
+	"style": "otter-font-awesome-style"
+}

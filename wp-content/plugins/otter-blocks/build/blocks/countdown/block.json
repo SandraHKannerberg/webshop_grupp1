@@ -1,0 +1,178 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "themeisle-blocks/countdown",
+	"title": "Countdown",
+	"category": "themeisle-blocks",
+	"description": "Set a countdown for a date. Powered by Otter.",
+	"keywords": [ "countdown", "time", "counter" ],
+	"textdomain": "otter-blocks",
+	"attributes": {
+		"id": {
+			"type": "string"
+		},
+		"date": {
+			"type": "string"
+		},
+		"exclude": {
+			"type": "array"
+		},
+		"backgroundColor": {
+			"type": "string"
+		},
+		"valueColor": {
+			"type": "string"
+		},
+		"labelColor": {
+			"type": "string"
+		},
+		"labelDistance": {
+			"type": "number"
+		},
+		"separatorColor": {
+			"type": "string"
+		},
+		"gap": {
+			"type": "number"
+		},
+		"gapTablet": {
+			"type": "number"
+		},
+		"gapMobile": {
+			"type": "number"
+		},
+		"width": {
+			"type": "number"
+		},
+		"widthTablet": {
+			"type": "number"
+		},
+		"widthMobile": {
+			"type": "number"
+		},
+		"containerWidth": {
+			"type": "string"
+		},
+		"containerWidthTablet": {
+			"type": "string"
+		},
+		"containerWidthMobile": {
+			"type": "string"
+		},
+		"height": {
+			"type": "number"
+		},
+		"heightTablet": {
+			"type": "number"
+		},
+		"heightMobile": {
+			"type": "number"
+		},
+		"borderRadius": {
+			"type": [ "number", "object" ]
+		},
+		"borderRadiusBox": {
+			"type": "object"
+		},
+		"borderStyle": {
+			"type": "string"
+		},
+		"borderWidth": {
+			"type": "number"
+		},
+		"borderWidthTablet": {
+			"type": "number"
+		},
+		"borderWidthMobile": {
+			"type": "number"
+		},
+		"borderColor": {
+			"type": "string"
+		},
+		"valueFontSize": {
+			"type": [ "number", "string" ]
+		},
+		"valueFontSizeTablet": {
+			"type": [ "number", "string" ]
+		},
+		"valueFontSizeMobile": {
+			"type": [ "number", "string" ]
+		},
+		"labelFontSize": {
+			"type": [ "number", "string" ]
+		},
+		"labelFontSizeTablet": {
+			"type": [ "number", "string" ]
+		},
+		"labelFontSizeMobile": {
+			"type": [ "number", "string" ]
+		},
+		"hasSeparators": {
+			"type": "boolean"
+		},
+		"valueFontWeight": {
+			"type": "string"
+		},
+		"labelFontWeight": {
+			"type": "string"
+		},
+		"alignment": {
+			"type": "string"
+		},
+		"padding": {
+			"type": "object"
+		},
+		"paddingTablet": {
+			"type": "object"
+		},
+		"paddingMobile": {
+			"type": "object"
+		},
+		"borderRadiusTopRight": {
+			"type": "number"
+		},
+		"borderRadiusTopLeft": {
+			"type": "number"
+		},
+		"borderRadiusBottomRight": {
+			"type": "number"
+		},
+		"borderRadiusBottomLeft": {
+			"type": "number"
+		},
+		"borderRadiusType": {
+			"type": "string",
+			"default": "linked"
+		},
+		"separatorAlignment": {
+			"type": "string"
+		},
+		"behaviour": {
+			"type": "string"
+		},
+		"redirectLink": {
+			"type": "string"
+		},
+		"mode": {
+			"type": "string"
+		},
+		"timer": {
+			"type": "object"
+		},
+		"startInterval": {
+			"type": "string"
+		},
+		"endInterval": {
+			"type": "string"
+		},
+		"onEndAction": {
+			"type": "string"
+		}
+	},
+	"supports": {
+		"align": [ "wide", "full" ]
+	},
+	"editorStyle": "otter-countdown-editor",
+	"style": "otter-countdown-style",
+	"script": "otter-countdown"
+}

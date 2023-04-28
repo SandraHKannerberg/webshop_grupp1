@@ -1,0 +1,191 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "themeisle-blocks/advanced-column",
+	"title": "Section Column",
+	"category": "themeisle-blocks",
+	"description": "A single column within a Section block. Powered by Otter.",
+	"parent": [ "themeisle-blocks/advanced-columns" ],
+	"textdomain": "otter-blocks",
+	"attributes": {
+		"id": {
+			"type": "string"
+		},
+		"padding": {
+			"type": "object"
+		},
+		"paddingTablet": {
+			"type": "object"
+		},
+		"paddingMobile": {
+			"type": "object"
+		},
+		"margin": {
+			"type": "object"
+		},
+		"marginTablet": {
+			"type": "object"
+		},
+		"marginMobile": {
+			"type": "object"
+		},
+		"color": {
+			"type": "string"
+		},
+		"colorHover": {
+			"type": "string"
+		},
+		"linkColor": {
+			"type": "string"
+		},
+		"backgroundType": {
+			"type": "string",
+			"default": "color"
+		},
+		"backgroundColor": {
+			"type": "string"
+		},
+		"backgroundImage": {
+			"type": "object"
+		},
+		"backgroundAttachment": {
+			"type": "string",
+			"default": "scroll"
+		},
+		"backgroundPosition": {
+			"type": "object"
+		},
+		"backgroundRepeat": {
+			"type": "string",
+			"default": "repeat"
+		},
+		"backgroundSize": {
+			"type": "string",
+			"default": "auto"
+		},
+		"backgroundGradient": {
+			"type": "string",
+			"default": "linear-gradient(90deg,rgba(54,209,220,1) 0%,rgba(91,134,229,1) 100%)"
+		},
+		"backgroundOverlayOpacity": {
+			"type": "number",
+			"default": 50
+		},
+		"backgroundOverlayType": {
+			"type": "string",
+			"default": "color"
+		},
+		"backgroundOverlayColor": {
+			"type": "string"
+		},
+		"backgroundOverlayImage": {
+			"type": "object"
+		},
+		"backgroundOverlayAttachment": {
+			"type": "string",
+			"default": "scroll"
+		},
+		"backgroundOverlayPosition": {
+			"type": "object"
+		},
+		"backgroundOverlayRepeat": {
+			"type": "string",
+			"default": "repeat"
+		},
+		"backgroundOverlaySize": {
+			"type": "string",
+			"default": "auto"
+		},
+		"backgroundOverlayGradient": {
+			"type": "string",
+			"default": "linear-gradient(90deg,rgba(54,209,220,1) 0%,rgba(91,134,229,1) 100%)"
+		},
+		"backgroundOverlayFilterBlur": {
+			"type": "number",
+			"default": 0
+		},
+		"backgroundOverlayFilterBrightness": {
+			"type": "number",
+			"default": 10
+		},
+		"backgroundOverlayFilterContrast": {
+			"type": "number",
+			"default": 10
+		},
+		"backgroundOverlayFilterGrayscale": {
+			"type": "number",
+			"default": 0
+		},
+		"backgroundOverlayFilterHue": {
+			"type": "number",
+			"default": 0
+		},
+		"backgroundOverlayFilterSaturate": {
+			"type": "number",
+			"default": 10
+		},
+		"backgroundOverlayBlend": {
+			"type": "string",
+			"default": "normal"
+		},
+		"backgroundColorHover": {
+			"type": "string"
+		},
+		"border": {
+			"type": "object"
+		},
+		"borderColor": {
+			"type": "string"
+		},
+		"borderRadius": {
+			"type": "object"
+		},
+		"boxShadow": {
+			"type": "boolean",
+			"default": false
+		},
+		"boxShadowColor": {
+			"type": "string",
+			"default": "#000000"
+		},
+		"boxShadowColorOpacity": {
+			"type": "number",
+			"default": 50
+		},
+		"boxShadowBlur": {
+			"type": "number",
+			"default": 5
+		},
+		"boxShadowSpread": {
+			"type": "number",
+			"default": 0
+		},
+		"boxShadowHorizontal": {
+			"type": "number",
+			"default": 0
+		},
+		"boxShadowVertical": {
+			"type": "number",
+			"default": 0
+		},
+		"columnsHTMLTag": {
+			"type": "string",
+			"default": "div"
+		},
+		"columnWidth": {
+			"type": "string"
+		},
+		"verticalAlign": {
+			"type": "string"
+		},
+		"isSynced": {
+			"type": "array"
+		}
+	},
+	"supports": {
+		"inserter": false,
+		"html": false
+	},
+	"editorStyle": "otter-advanced-columns-editor",
+	"style": "otter-advanced-columns-style"
+}

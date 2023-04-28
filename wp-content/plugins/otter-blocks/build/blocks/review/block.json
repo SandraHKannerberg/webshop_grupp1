@@ -1,0 +1,172 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "themeisle-blocks/review",
+	"title": "Product Review",
+	"category": "themeisle-blocks",
+	"description": "Turn your posts into smart reviews with ratings and generate leads with a performing review block. Powered by Otter.",
+	"keywords": [ "product", "review", "stars" ],
+	"textdomain": "otter-blocks",
+	"attributes": {
+		"id": {
+			"type": "string"
+		},
+		"title": {
+			"type": "string"
+		},
+		"currency": {
+			"type": "string",
+			"default": "USD"
+		},
+		"price": {
+			"type": "number"
+		},
+		"discounted": {
+			"type": "number"
+		},
+		"image": {
+			"type": "object"
+		},
+		"description": {
+			"type": "string"
+		},
+		"features": {
+			"type": "array",
+			"default": [
+			{
+				"title": "Stability",
+				"rating": 9
+			},
+			{
+				"title": "Ease of Use",
+				"rating": 4
+			},
+			{
+				"title": "Look & Feel",
+				"rating": 9
+			},
+			{
+				"title": "Price",
+				"rating": 7
+			}
+			]
+		},
+		"pros": {
+			"type": "array",
+			"default": [
+				"Easy to use",
+				"Good price",
+				"Sturdy build and ergonomics"
+			]
+		},
+		"cons": {
+			"type": "array",
+			"default": [
+				"Incompatible with old versions",
+				"Hard to assemble",
+				"Bad color combination"
+			]
+		},
+		"links": {
+			"type": "array",
+			"default": [
+			{
+				"label": "Buy on Amazon",
+				"href": "",
+				"isSponsored": false
+			},
+			{
+				"label": "Buy on eBay",
+				"href": "",
+				"isSponsored": false
+			}
+			]
+		},
+		"prosLabel": {
+			"type": "string",
+			"default": "Pros"
+		},
+		"consLabel": {
+			"type": "string",
+			"default": "Cons"
+		},
+		"buttonsLabel": {
+			"type": "string",
+			"default": "Buy this Product"
+		},
+		"imageWidth": {
+			"type": "number"
+		},
+		"imageSize": {
+			"type": "string"
+		},
+		"mainHeading": {
+			"type": "string"
+		},
+		"subHeading": {
+			"type": "string"
+		},
+		"contentFontSize": {
+			"type": "string"
+		},
+		"primaryColor": {
+			"type": "string"
+		},
+		"backgroundColor": {
+			"type": "string"
+		},
+		"textColor": {
+			"type": "string"
+		},
+		"buttonTextColor": {
+			"type": "string"
+		},
+		"borderColor": {
+			"type": "string"
+		},
+		"starsColor": {
+			"type": "string"
+		},
+		"prosColor": {
+			"type": "string"
+		},
+		"consColor": {
+			"type": "string"
+		},
+		"padding": {
+			"type": "object"
+		},
+		"paddingTablet": {
+			"type": "object"
+		},
+		"paddingMobile": {
+			"type": "object"
+		},
+		"borderWidth": {
+			"type": "number"
+		},
+		"borderRadius": {
+			"type": "number"
+		},
+		"boxShadow": {
+			"type": "object",
+			"default": {
+				"active": false,
+				"colorOpacity": 50,
+				"blur": 5,
+				"spread": 1,
+				"horizontal": 0,
+				"vertical": 0
+			}
+		},
+		"isSynced": {
+			"type": "array"
+		}
+	},
+	"supports": {
+		"align": [ "full", "wide" ],
+		"html": false
+	},
+	"editorStyle": "otter-review-editor",
+	"style": "otter-review-style"
+}

@@ -1,0 +1,70 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "themeisle-blocks/tabs",
+	"title": "Tabs",
+	"category": "themeisle-blocks",
+	"description": "Organize and allow navigation between groups of content with Tabs block. Powered by Otter.",
+	"keywords": [ "media", "tabs", "select" ],
+	"textdomain": "otter-blocks",
+	"attributes": {
+		"id": {
+			"type": "string"
+		},
+		"borderColor": {
+			"type": "string"
+		},
+		"borderWidth": {
+			"type": ["number", "object"]
+		},
+		"borderRadius": {
+			"type": "object"
+		},
+		"titleBorderWidth": {
+			"type": "object"
+		},
+		"titleColor": {
+			"type": "string"
+		},
+		"tabColor": {
+			"type": "string"
+		},
+		"activeTitleColor": {
+			"type": "string"
+		},
+		"activeTitleBackgroundColor": {
+			"type": "string"
+		},
+		"activeBorderColor": {
+			"type": "string"
+		},
+		"contentTextColor": {
+			"type": "string"
+		},
+		"titleBackgroundColor": {
+			"type": "string"
+		},
+		"titlePadding": {
+			"type": "object"
+		},
+		"contentPadding": {
+			"type": "object"
+		},
+		"titleFontSize" : {
+			"type": "string"
+		},
+		"titleAlignment": {
+			"type": "string"
+		},
+		"isSynced": {
+			"type": "array",
+			"default": []
+		}
+	},
+	"supports": {
+		"align": [ "left", "center", "right" ]
+	},
+	"editorStyle": "otter-tabs-editor",
+	"style": "otter-tabs-style",
+	"script": "otter-tabs"
+}

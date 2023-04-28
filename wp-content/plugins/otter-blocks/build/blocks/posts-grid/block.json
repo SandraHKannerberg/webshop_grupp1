@@ -1,0 +1,242 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "themeisle-blocks/posts-grid",
+	"title": "Posts",
+	"category": "themeisle-blocks",
+	"description": "Display a list of your most recent posts in a beautiful layout. Powered by Otter.",
+	"keywords": [ "posts", "grid", "news" ],
+	"textdomain": "otter-blocks",
+	"attributes": {
+		"id": {
+			"type": "string"
+		},
+		"style": {
+			"type": "string",
+			"default": "grid"
+		},
+		"postTypes": {
+			"type": "array",
+			"default": []
+		},
+		"columns": {
+			"type": "number",
+			"default": 3
+		},
+		"template": {
+			"type": "array",
+			"default": [
+				"category",
+				"title",
+				"meta",
+				"description"
+			]
+		},
+		"categories": {
+			"type": "array",
+			"items": {
+				"type": "object"
+			}
+		},
+		"postsToShow": {
+			"type": "number",
+			"default": 5
+		},
+		"order": {
+			"type": "string",
+			"default": "desc"
+		},
+		"orderBy": {
+			"type": "string",
+			"default": "date"
+		},
+		"offset": {
+			"type": "number",
+			"default": 0
+		},
+		"imageSize": {
+			"type": "string",
+			"default": "full"
+		},
+		"displayFeaturedImage": {
+			"type": "boolean",
+			"default": true
+		},
+		"displayCategory": {
+			"type": "boolean",
+			"default": true
+		},
+		"displayTitle": {
+			"type": "boolean",
+			"default": true
+		},
+		"titleTag": {
+			"type": "string",
+			"default": "h5"
+		},
+		"displayMeta": {
+			"type": "boolean",
+			"default": true
+		},
+		"displayDescription": {
+			"type": "boolean",
+			"default": true
+		},
+		"excerptLength": {
+			"type": "number",
+			"default": 100
+		},
+		"displayDate": {
+			"type": "boolean",
+			"default": true
+		},
+		"displayUpdatedDate": {
+			"type": "boolean",
+			"default": false
+		},
+		"displayAuthor": {
+			"type": "boolean",
+			"default": true
+		},
+		"displayComments": {
+			"type": "boolean",
+			"default": true
+		},
+		"displayPostCategory": {
+			"type": "boolean",
+			"default": false
+		},
+		"displayReadMoreLink": {
+			"type": "boolean",
+			"default": false
+		},
+		"cropImage": {
+			"type": "boolean",
+			"default": false
+		},
+		"customTitleFontSize": {
+			"type": [ "string", "number" ]
+		},
+		"customTitleFontSizeTablet": {
+			"type": [ "string", "number" ]
+		},
+		"customTitleFontSizeMobile": {
+			"type": [ "string", "number" ]
+		},
+		"customDescriptionFontSize": {
+			"type": [ "string", "number" ]
+		},
+		"customDescriptionFontSizeTablet": {
+			"type": [ "string", "number" ]
+		},
+		"customDescriptionFontSizeMobile": {
+			"type": [ "string", "number" ]
+		},
+		"customMetaFontSize": {
+			"type": "string"
+		},
+		"customMetaFontSizeTablet": {
+			"type": "string"
+		},
+		"customMetaFontSizeMobile": {
+			"type": "string"
+		},
+		"textColor": {
+			"type": "string"
+		},
+		"backgroundColor": {
+			"type": "string"
+		},
+		"borderColor": {
+			"type": "string"
+		},
+		"borderRadius": {
+			"type": [ "number", "object" ]
+		},
+		"borderWidth": {
+			"type": "string"
+		},
+		"cardBorderRadius": {
+			"type": "object"
+		},
+		"boxShadow": {
+			"type": "object",
+			"default": {
+				"active": false,
+				"colorOpacity": 50,
+				"blur": 5,
+				"spread": 1,
+				"horizontal": 0,
+				"vertical": 0
+			}
+		},
+		"imageBoxShadow": {
+			"type": "object",
+			"default": {
+				"active": false,
+				"colorOpacity": 50,
+				"blur": 5,
+				"spread": 1,
+				"horizontal": 0,
+				"vertical": 0
+			}
+		},
+		"textAlign": {
+			"type": "string"
+		},
+		"verticalAlign": {
+			"type": "string"
+		},
+		"enableFeaturedPost": {
+			"type": "boolean"
+		},
+		"imageWidth": {
+			"type": [ "string", "number" ]
+		},
+		"imageWidthTablet": {
+			"type": "string"
+		},
+		"imageWidthMobile": {
+			"type": "string"
+		},
+		"columnGap": {
+			"type": "string"
+		},
+		"columnGapTablet": {
+			"type": "string"
+		},
+		"columnGapMobile": {
+			"type": "string"
+		},
+		"rowGap": {
+			"type": "string"
+		},
+		"rowGapTablet": {
+			"type": "string"
+		},
+		"rowGapMobile": {
+			"type": "string"
+		},
+		"padding": {
+			"type": "string"
+		},
+		"paddingTablet": {
+			"type": "string"
+		},
+		"paddingMobile": {
+			"type": "string"
+		},
+		"contentGap": {
+			"type": "string"
+		},
+		"featuredPostOrder": {
+			"type": "string"
+		}
+	},
+	"supports": {
+		"align": [ "wide", "full" ],
+		"html": false
+	},
+	"editorStyle": "otter-posts-grid-editor",
+	"style": "otter-posts-grid-style"
+}

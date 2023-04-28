@@ -16,6 +16,31 @@ Template: storefront
   border-bottom: none;
 }
 
+div.info-banner {
+  background-color: rgb(23, 22, 22);
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 20px;
+  padding-bottom: 0;
+  height: 50px;
+  margin: auto;
+}
+
+.wp-block-themeisle-blocks-font-awesome-icons-container {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.wp-block-themeisle-blocks-font-awesome-icons-container.p {
+  margin: 0;
+}
+
+.alignfull {
+  margin-bottom: 50px;
+}
+
 /* .woocommerce.columns-4.quick-sale {
   background-color: lightgreen;
   display: flex;
