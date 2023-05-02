@@ -128,3 +128,13 @@ function add_phonenumber()
     dynamic_sidebar('checkout');
 }
 /*------------------END OF OPTIMIZED CHECKOUT-------------------*/
+
+add_action('init', 'menu_categories');
+//Creat a menu for product categories
+function menu_categories()
+{
+    $menus = array(
+        'produktmeny' => 'produktmeny',
+    );
+    register_nav_menus($menus);
+}

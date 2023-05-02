@@ -41,16 +41,6 @@ div.info-banner {
   margin-bottom: 50px;
 }
 
-/* .woocommerce.columns-4.quick-sale {
-  background-color: lightgreen;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-} */
-
-/* .alignnormal {
-  background-color: aquamarine;
-} */
 .home .entry-title {
   display: none;
 }
@@ -113,10 +103,12 @@ ul.meta {
   transition: 0.3 all ease;
 }
 
-/*STYLE FÖR PRIS OCH ANTAL BREDVID KUNDKORGEN MEN DESSA BLIR SAMMA FÄRG I CHECKOUT
-.woocommerce-Price-amount {
-  color: blue;
+ul.product-menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-top: 40px;
 }
-.count {
-  color: blue;
-}*/
