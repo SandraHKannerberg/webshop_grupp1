@@ -9,6 +9,10 @@ Template: storefront
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  height: 100vh;
+}
+
 #masthead {
   margin-bottom: 0;
   background-color: rgb(23, 22, 22);
@@ -103,6 +107,11 @@ ul.meta {
   transition: 0.3 all ease;
 }
 
+.post-image {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 ul.product-menu {
   list-style: none;
   display: flex;
@@ -111,4 +120,50 @@ ul.product-menu {
   text-transform: uppercase;
   letter-spacing: 2px;
   padding-top: 40px;
+}
+
+.butik-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
+.butik-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.butik-adress.p {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 930px) {
+  .post-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  footer .col-full {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .post-container {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  ul.meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
