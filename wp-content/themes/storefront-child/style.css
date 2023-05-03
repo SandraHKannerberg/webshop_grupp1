@@ -112,6 +112,10 @@ ul.meta {
   margin-bottom: 2rem;
 }
 
+p.post-paragraph a {
+  font-weight: bold;
+}
+
 ul.product-menu {
   list-style: none;
   display: flex;
