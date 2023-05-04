@@ -1,0 +1,29 @@
+2023-05-04T09:02:08+00:00 CRITICAL Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\MAMP\htdocs\webshop_grupp1\wp-content\plugins\woocommerce\includes\class-wc-shipping-zone.php:170
+Stack trace:
+#0 C:\MAMP\htdocs\webshop_grupp1\wp-content\plugins\woocommerce\includes\class-wc-shipping-zone.php(170): array_keys(NULL)
+#1 C:\MAMP\htdocs\webshop_grupp1\wp-content\plugins\woocommerce\includes\class-wc-shipping.php(162): WC_Shipping_Zone->get_shipping_methods(true)
+#2 C:\MAMP\htdocs\webshop_grupp1\wp-content\plugins\woocommerce\includes\class-wc-shipping.php(336): WC_Shipping->load_shipping_methods(Array)
+#3 C:\MAMP\htdocs\webshop_grupp1\wp-content\plugins\woocommerce\includes\class-wc-shipping.php(260): WC_Shipping->calculate_shipping_for_package(Array, 0)
+#4 C:\MAMP\htdocs\webshop_grupp1\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1423): WC_Shipping->calculate_shipping(Array)
+#5 C:\MAMP\htdocs\webshop_grupp1\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(339): WC_Cart->calculate_shipping()
+#6 C:\MAMP\htdocs\webshop_grupp1\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(850): WC_Cart_Totals->get_shipping_from_cart()
+#7 C:\MAMP\htdocs\webshop_grupp1\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(144): WC_Cart_Totals->calculate_shipping_totals()
+#8 C:\MAMP\htdocs\webshop_grupp1\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#9 C:\MAMP\htdocs\webshop_grupp1\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct(Object(WC_Cart))
+#10 C:\MAMP\htdocs\webshop_grupp1\wp-includes\class-wp-hook.php(306): WC_Cart->calculate_totals()
+#11 C:\MAMP\htdocs\webshop_grupp1\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#12 C:\MAMP\htdocs\webshop_grupp1\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#13 C:\MAMP\htdocs\webshop_grupp1\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1279): do_action('woocommerce_add...', 'bbcf8272ed3f1f5...', 56, 1, 57, Array, Array)
+#14 C:\MAMP\htdocs\webshop_grupp1\wp-content\plugins\woocommerce\includes\class-wc-form-handler.php(918): WC_Cart->add_to_cart(56, 1, 57, Array)
+#15 C:\MAMP\htdocs\webshop_grupp1\wp-content\plugins\woocommerce\includes\class-wc-form-handler.php(790): WC_Form_Handler::add_to_cart_handler_variable(56)
+#16 C:\MAMP\htdocs\webshop_grupp1\wp-includes\class-wp-hook.php(308): WC_Form_Handler::add_to_cart_action('')
+#17 C:\MAMP\htdocs\webshop_grupp1\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#18 C:\MAMP\htdocs\webshop_grupp1\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#19 C:\MAMP\htdocs\webshop_grupp1\wp-settings.php(645): do_action('wp_loaded')
+#20 C:\MAMP\htdocs\webshop_grupp1\wp-config.php(94): require_once('C:\\MAMP\\htdocs\\...')
+#21 C:\MAMP\htdocs\webshop_grupp1\wp-load.php(50): require_once('C:\\MAMP\\htdocs\\...')
+#22 C:\MAMP\htdocs\webshop_grupp1\wp-blog-header.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#23 C:\MAMP\htdocs\webshop_grupp1\index.php(17): require('C:\\MAMP\\htdocs\\...')
+#24 {main}
+  thrown i C:\MAMP\htdocs\webshop_grupp1\wp-content\plugins\woocommerce\includes\class-wc-shipping-zone.php på rad 170
+
