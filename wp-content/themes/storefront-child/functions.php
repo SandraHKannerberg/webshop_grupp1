@@ -130,7 +130,7 @@ function add_phonenumber()
 /*------------------END OF OPTIMIZED CHECKOUT-------------------*/
 
 add_action('init', 'menu_categories');
-//Creat a menu for product categories
+//Create a menu for product categories
 function menu_categories()
 {
     $menus = array(

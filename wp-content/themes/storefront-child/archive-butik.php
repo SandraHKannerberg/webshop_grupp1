@@ -12,7 +12,7 @@ $args = array(
 <div class="butik-container">
 
     <?php
-    //läs endast in butiker (posttyp=butik)
+
     $loop = new WP_Query($args);
     while ($loop->have_posts()) {
         $loop->the_post();
@@ -29,7 +29,6 @@ $args = array(
     } ?>
 </div>
 <?php
-////i pluginet has_archive => true för att komma in på sidan localhost/webbutik_/butiker 
 ?>
 
 <?php get_footer(); ?>

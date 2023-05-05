@@ -74,12 +74,12 @@ function our_own_drone_shipping_init()
                 $cost = 199;
                 $drone_Shipping_Method = new WC_OUR_OWN_DRONE_SHIPPING();
                 $weightLimit = (int)$drone_Shipping_Method->settings['weight'];
-                //////////////////////////////////
                 $distanceLimit = (int)$drone_Shipping_Method->settings['distance'];
+                $costPerKm = (int)$drone_Shipping_Method->settings['cost_per_km'];
                 $distance = 0;
                 $destination = WC()->customer->get_shipping_postcode() . ' ' . WC()->customer->get_shipping_city() . ' ' . WC()->customer->get_shipping_address_1();
                 $origin = 'Arenavägen 35, 121 77 Stockholm, Sweden'; // Replace with your store address
-                $response = wp_remote_get('https://maps.googleapis.com/maps/api/distancematrix/json?origins=' . urlencode($origin) . '&destinations=' . urlencode($destination) . '&mode=driving&key=AIzaSyD8xjMrbRu4RvUrKCDCTzukOE-IwRCimVQ&q='); // Replace with your Google Maps API key
+                $response = wp_remote_get('https://maps.googleapis.com/maps/api/distancematrix/json?origins=' . urlencode($origin) . '&destinations=' . urlencode($destination) . '&mode=driving&key=YOUR_API_KEY&q='); // Replace with your Google Maps API key
 
                 if (!is_wp_error($response)) {
                     $body = json_decode(wp_remote_retrieve_body($response), true);
@@ -87,7 +87,7 @@ function our_own_drone_shipping_init()
                         $distance = round($body['rows'][0]['elements'][0]['distance']['value'] / 1000, 1);
                     }
                 }
-                ///////////////////////////////////////
+
 
                 foreach ($package['contents'] as $values) {
                     $_product = $values['data'];
@@ -104,26 +104,16 @@ function our_own_drone_shipping_init()
                 } elseif ($weight > 2) {
                     $cost += $heavy;
                 }
-                ////////////////////////////////////////
 
-                $distanceCost = $distance * 10;
+                $distanceCost = $distance * $costPerKm;
 
-                // if ($distance > $distanceLimit) {
-                //     $cost = -1; // Set the cost to a negative number to indicate that the shipping method is not available
-                // } else {
-                //     $cost += $distanceCost;
-                // }
-                /////////////////////////////////
-                // Define an array of shipping rates
                 $rate = array(
                     'id' => $this->id,
                     'label' => $this->title,
                     'cost' => $cost += $distanceCost,
                 );
-                // Register each rate using the add_rate() method
-                if (!$weight > $weightLimit) {
-                    // echo "För hög vikt för detta fraktalternativ";
-                } else {
+
+                if ($weight <= $weightLimit && $distance <= $distanceLimit) {
                     $this->add_rate($rate);
                 }
             }
